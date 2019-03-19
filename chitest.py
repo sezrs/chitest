@@ -52,7 +52,6 @@ def graph(o):
 def test(o, static_freq=True):
 
     if(static_freq):
-        #print(len(o))
         freq = args.testnum*(1/len(o))
         e = {i: freq for i in range(1, len(o)+1)}
     x = 0
@@ -82,20 +81,8 @@ def pie_chart(s, critvalue):
     plt.show()
     return(indx)
 
-
-
-
-
-#r, a = pie_chart(sampleE, args.critvalueE)
-#pie = [a, r]
-
-#plt.pie(pie, explode=exploded, labels=labels, autopct="%1.1f%%", shadow=True)
-#plt.axis("equal")
-#plt.show()
-
 x = sampleU()
 print(x)
 print(test(x))
 graph(x)
 print(pie_chart(sampleU, args.critvalueU))
-#graph(sampleE())
